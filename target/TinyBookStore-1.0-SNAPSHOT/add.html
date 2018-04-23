@@ -1,0 +1,38 @@
+<hr>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3 form-box">
+            <form role="form" action="#" method="post" class="registration-form">
+                <div class="form-group">
+                    <label for="form-name">书名</label>
+                    <input type="text" ng-model="book.book_name" class="form-control" id="form-name">
+                </div>
+                <div class="form-group">
+                    <label for="form-writer">作者</label>
+                    <input type="text" ng-model="book.writer" class="form-control" id="form-writer">
+                </div>
+                <div class="form-group">
+                    <label for="form-price">价格</label>
+                    <input type="text" ng-model="book.price" class="form-control" id="form-price">
+                </div>
+                <div class="form-group">
+                    <label for="form-store">库存</label>
+                    <input type="text"ng-model="book.store" class="form-control" id="form-store">
+                </div>
+                <div class="form-group">
+                    <label for="form-image">缩略图</label>
+                    <input type="text" ng-model="book.image[0]"
+                           class="form-control" id="form-image">
+                </div>
+                <div class="form-group">
+                    <label for="form-big-image">大图</label>
+                    <input type="text" ng-model="book.image[1]"
+                           class="form-control" id="form-big-image">
+                </div>
+                <button type="button" class="btn btn-primary" ng-click=add();">添加</button>
+                <button type="button" class="btn btn-default" ng-click="cancel();">取消</button>
+            </form>
+        </div>
+    </div>
+</div>
+<hr>
